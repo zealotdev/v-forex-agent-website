@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1447px" height="129px" viewBox="0 0 1447 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>separator</title>
+    <g id="landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.260844624">
+        <g id="Desktop-HD" transform="translate(2.000000, -835.000000)" stroke="#979797">
+            <g id="separator" transform="translate(-0.500000, 836.660916)">
+                <g id="Group-7" transform="translate(723.500000, 38.500000) scale(1, -1) translate(-723.500000, -38.500000) translate(2.000000, 0.000000)">
+                    <path d="M0.5,76.6609163 C331.811042,25.9942497 572.144375,0.660916345 721.5,0.660916345" id="Path-5"></path>
+                    <path d="M721.5,76.6609163 C1052.81104,25.9942497 1293.14438,0.660916345 1442.5,0.660916345" id="Path-5" transform="translate(1082.000000, 38.660916) scale(-1, 1) translate(-1082.000000, -38.660916) "></path>
+                </g>
+                <g id="Group-7-Copy" transform="translate(0.000000, 50.000000)">
+                    <path d="M0,76.3390837 C331.311042,25.4463612 571.644375,-5.68434189e-14 721,-5.68434189e-14" id="Path-5"></path>
+                    <path d="M721,76.3390837 C1052.31104,25.4463612 1292.64438,-5.68434189e-14 1442,-5.68434189e-14" id="Path-5" transform="translate(1081.500000, 38.169542) scale(-1, 1) translate(-1081.500000, -38.169542) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

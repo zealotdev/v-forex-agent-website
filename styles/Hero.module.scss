@@ -1,0 +1,184 @@
+@import './base/variables';
+@import './base/media';
+
+.hero {
+  position: relative;
+  padding: 5rem 2rem;
+
+  @include for-tablet-portrait-up {
+    display: flex;
+    padding-bottom: 9rem;
+    margin-left: auto;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  @include for-tablet-landscape-up {
+    padding: 5rem 8rem;
+    padding-bottom: 9rem;
+  }
+}
+
+// CTA section
+
+.heroCTA {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 0;
+  z-index: 3;
+
+  @include for-tablet-portrait-up {
+    max-width: 45%;
+  }
+
+  & > h1 {
+    font-size: 3.5rem;
+
+    @include for-tablet-landscape-up {
+      font-size: 5rem;
+    }
+  }
+
+  & > span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 20rem;
+  }
+
+  .packageItems {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .packageItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+  }
+
+  .bulletinIcon {
+    margin-right: 0.5rem;
+  }
+}
+
+.CTAButtons {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.CTABtn {
+  padding: 0.8rem 2rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: $primary-color;
+  border: solid 2px $primary-color;
+  background-color: $background-color;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.5rem;
+    padding: 0.6rem 1.4rem;
+  }
+  @include for-tablet-landscape-up {
+    font-size: 2rem;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 0px 0 2rem $primary-color;
+    transform: translateY(-0.25em);
+    color: white;
+  }
+}
+
+.CTAMore {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: $blue-color;
+  cursor: pointer;
+  transition: all 0.3s 0.1s ease-in-out;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.6rem;
+  }
+
+  @include for-tablet-landscape-up {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $blue-color;
+  }
+}
+
+// Illustration Section
+
+.heroIllustration {
+  position: absolute;
+  opacity: 0.3;
+  top: 4rem;
+  right: 0;
+  z-index: -1.5;
+  user-select: none;
+
+  @include for-tablet-portrait-up {
+    position: relative;
+    z-index: 1;
+    margin-top: 5rem;
+    opacity: 1;
+  }
+
+  & > img {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 30rem;
+
+    @include for-tablet-landscape-up {
+      height: 40rem;
+      width: 40rem;
+      border-radius: 40rem;
+    }
+  }
+}
+
+.bubbleOne {
+  position: absolute;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 30rem;
+  top: -5rem;
+  right: -3rem;
+  z-index: -1;
+  background-color: $primary-color-shade;
+
+  @include for-tablet-landscape-up {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 40rem;
+  }
+}
+.bubbleTwo {
+  position: absolute;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 30rem;
+  bottom: -5rem;
+  right: 3rem;
+  z-index: -1;
+  background-color: $secondary-color-shade;
+  @include for-tablet-landscape-up {
+    height: 40rem;
+    width: 40rem;
+    border-radius: 40rem;
+  }
+}

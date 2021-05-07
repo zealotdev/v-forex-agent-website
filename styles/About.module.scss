@@ -1,0 +1,42 @@
+@import './base/media';
+@import './base/variables';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+
+  @include for-tablet-portrait-up {
+    padding-bottom: 9rem;
+  }
+  @include for-tablet-landscape-up {
+    padding: 5rem 9rem;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  & > h2 {
+    font-weight: 300;
+    background-color: $secondary-color-shade;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+  }
+}
+
+.desc {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.8rem;
+    width: 70%;
+  }
+  @include for-tablet-landscape-up {
+    width: 60%;
+  }
+}

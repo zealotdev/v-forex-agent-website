@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="43px" viewBox="0 0 37 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <g id="landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1308.000000, -149.000000)">
+            <g id="nav" transform="translate(607.000000, 25.000000)">
+                <g id="Group-8" transform="translate(701.000000, 127.315654)">
+                    <g id="Group" transform="translate(5.030402, 0.000000)" stroke="#00D1AF" stroke-linecap="round" stroke-width="4">
+                        <line x1="-3.03040152" y1="12.1843456" x2="27.9695985" y2="12.1843456" id="Path" transform="translate(12.469598, 12.184346) rotate(134.000000) translate(-12.469598, -12.184346) "></line>
+                        <line x1="-3.03040152" y1="11.1843456" x2="27.9695985" y2="11.6843456" id="Path-Copy" transform="translate(12.469598, 11.684346) rotate(44.075955) translate(-12.469598, -11.684346) "></line>
+                    </g>
+                    <text id="CLOSE" font-family="Lato-Regular, Lato" font-size="12" font-weight="normal" fill="#00D1AF">
+                        <tspan x="0" y="35.6843456">CLOSE</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

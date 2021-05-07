@@ -1,0 +1,77 @@
+@import './base/media';
+@import './base/variables';
+
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+
+  @include for-tablet-portrait-up {
+    padding-bottom: 9rem;
+  }
+  @include for-tablet-landscape-up {
+    padding: 5rem 9rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 300;
+  width: 80%;
+  line-height: 4rem;
+
+  @include for-tablet-landscape-up {
+    width: 15%;
+  }
+}
+
+.coreValues {
+  @include for-tablet-portrait-up {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.coreValue {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  @include for-tablet-portrait-up {
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 20rem;
+  }
+  @include for-big-desktop-up {
+    min-width: 25rem;
+  }
+
+  & > img {
+    width: 12rem;
+
+    @include for-tablet-portrait-up {
+      width: 15rem;
+    }
+  }
+}
+
+.ExpValue {
+  color: $primary-color;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.ActValue {
+  @extend .ExpValue;
+  color: $dark-blue-color;
+}
+
+.CareValue {
+  @extend .ExpValue;
+  color: $blue-color;
+}

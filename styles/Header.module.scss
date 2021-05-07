@@ -1,0 +1,110 @@
+@import './base/media';
+@import './base/variables';
+
+.nav {
+  width: 100%;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.navLogo {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navLogoImage {
+  height: 4rem;
+
+  @include for-desktop-up {
+    height: 5rem;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+
+  & > img {
+    height: 3rem;
+
+    @include for-tablet-landscape-up {
+      height: 2.5rem;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.mobileNavBar {
+  background-color: white;
+  transition: all 0.3s ease-in;
+
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+
+  & > .navLinks {
+    list-style-type: none;
+    line-height: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.navBar {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+
+  @include for-tablet-landscape-up {
+    display: block;
+  }
+
+  @include for-desktop-up {
+    right: 12rem;
+  }
+
+  .navLinks {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 35rem;
+
+    @include for-desktop-up {
+      width: 40rem;
+    }
+  }
+}
+
+.navLinkItem {
+  color: $primary-color;
+  font-weight: 300;
+  font-size: 1.6rem;
+  @include for-desktop-up {
+    font-size: 1.8rem;
+  }
+
+  & > a {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: darken($primary-color-shade, 20);
+    }
+  }
+}

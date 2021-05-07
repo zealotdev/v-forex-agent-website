@@ -1,0 +1,64 @@
+@import './base/media';
+@import './base/variables';
+
+.tabContainer {
+  width: 80em;
+  min-height: 30rem;
+  box-shadow: -1px 0px 5px 0px rgba(184, 184, 184, 1);
+  border-radius: 0.4rem;
+}
+
+.tabHead {
+  border-bottom: 1px solid black;
+  display: flex;
+  background-color: $primary-color-shade;
+  display: flex;
+  justify-content: center;
+}
+
+.tabBody {
+  height: 100%;
+  min-height: 30rem;
+  background-color: $background-color;
+}
+
+.tab {
+  padding: 1em;
+  font-size: 1.6rem;
+}
+.active {
+  background-color: $primary-color !important;
+  color: red;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem;
+}
+
+.card {
+  min-height: 36rem;
+  width: 60%;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary-color;
+  border-radius: 2rem;
+}
+.card:nth-child(even) {
+  height: 40rem;
+}
+
+.cardHead {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  background-color: $dark-blue-color;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  min-height: 10rem;
+
+  & > div:nth-child(odd) {
+    background-color: $blue-color;
+  }
+}

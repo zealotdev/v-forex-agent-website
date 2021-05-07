@@ -1,0 +1,114 @@
+@import './base/media';
+@import './base/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 5rem 2rem;
+
+  @include for-tablet-portrait-up {
+    padding-bottom: 9rem;
+  }
+  @include for-tablet-landscape-up {
+    padding: 5rem 9rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: initial;
+  }
+}
+
+.desc {
+  color: $dark-matter-color;
+  width: 100%;
+
+  @include for-tablet-portrait-up {
+    max-width: 80%;
+  }
+  @include for-tablet-landscape-up {
+    max-width: 40%;
+  }
+
+  & > p {
+    font-size: 1.6rem;
+    @include for-tablet-portrait-up {
+      max-width: 80%;
+    }
+    @include for-tablet-landscape-up {
+      max-width: 40%;
+    }
+  }
+
+  & > h3 {
+    font-size: 3rem;
+  }
+  @include for-tablet-portrait-up {
+    max-width: 80%;
+  }
+  @include for-tablet-landscape-up {
+    max-width: 30%;
+  }
+}
+
+.form {
+  width: 100%;
+  @include for-tablet-portrait-up {
+    max-width: 80%;
+  }
+
+  @include for-tablet-landscape-up {
+    max-width: 50%;
+  }
+}
+.formField {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  color: $dark-matter-color;
+  margin-bottom: 1rem;
+
+  & > label {
+    text-transform: capitalize;
+    margin-bottom: 0.4rem;
+  }
+
+  & > input {
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.8rem 0.6rem;
+  }
+
+  & > textarea {
+    border: none;
+    border-radius: 0.4rem;
+  }
+}
+
+.btnSubmit {
+  padding: 0.8rem 2rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: $background-color;
+  border: solid 2px $background-color;
+  background-color: $primary-color;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  @include for-tablet-portrait-up {
+    font-size: 1.5rem;
+    padding: 0.6rem 1.4rem;
+  }
+  @include for-tablet-landscape-up {
+    font-size: 2rem;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 0px 0 2rem $background-color;
+    transform: translateY(-0.25em);
+    color: $primary-color;
+  }
+}

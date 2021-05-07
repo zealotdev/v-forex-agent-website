@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="161px" height="157px" viewBox="0 0 161 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <g id="landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-517.000000, -1218.000000)">
+            <g id="values" transform="translate(250.000000, 1218.074234)">
+                <g id="Group-10" transform="translate(267.981935, 0.000000)">
+                    <g id="Group-9">
+                        <path d="M80.168927,20 C109.262274,20 152.091635,95.0767447 138.35562,118.276735 C124.619605,141.476725 36.2263427,142.33489 21.9822338,118.276735 C7.13299609,93.1965229 51.0755804,20 80.168927,20 Z" id="Triangle" fill="#00D1AF" transform="translate(80.000000, 78.000000) rotate(24.000000) translate(-80.000000, -78.000000) "></path>
+                        <text id="EXP" font-family="Lato-Bold, Lato" font-size="48" font-weight="bold" fill="#FCFCFC">
+                            <tspan x="34.0180646" y="96.9257662">EXP</tspan>
+                        </text>
+                    </g>
+                    <text id="Vast-Experience" font-family="Lato-Italic, Lato" font-size="18" font-style="italic" font-weight="normal" fill="#567284">
+                        <tspan x="15.0180646" y="169.925766">Vast Experience</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
