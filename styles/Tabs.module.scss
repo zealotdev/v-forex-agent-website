@@ -2,7 +2,6 @@
 @import './base/variables';
 
 .tabContainer {
-  width: 80em;
   min-height: 30rem;
   box-shadow: -1px 0px 5px 0px rgba(184, 184, 184, 1);
   border-radius: 0.4rem;
@@ -33,22 +32,30 @@
 
 .cards {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   padding: 4rem;
+
+  @include for-tablet-portrait-up {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .card {
   min-height: 36rem;
-  width: 60%;
-  margin: 0 1rem;
+  width: 100%;
+  margin: 1rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: $primary-color;
   border-radius: 2rem;
-}
-.card:nth-child(even) {
-  height: 40rem;
+
+  @include for-tablet-portrait-up {
+    margin: 0 1rem;
+    width: 60%;
+  }
 }
 
 .cardHead {
