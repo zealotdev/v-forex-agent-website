@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <div>
       <Head>
+        
         <title>Viwango FX</title>
         <link rel="icon" href="/viwango.svg" />
         <meta
