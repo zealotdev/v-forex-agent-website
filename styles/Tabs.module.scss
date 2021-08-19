@@ -2,22 +2,31 @@
 @import './base/variables';
 
 .tabContainer {
-  min-height: 30rem;
-  box-shadow: -1px 0px 5px 0px rgba(184, 184, 184, 1);
+  position: relative;
+  min-height: 40rem;
+  margin-bottom: 15rem;
   border-radius: 0.4rem;
 }
 
 .tabHead {
+  position: absolute;
   border-bottom: 1px solid black;
   display: flex;
-  background-color: $primary-color-shade;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $primary-color;
+  border-radius: 2rem;
+  width: 60rem;
   display: flex;
   justify-content: center;
 }
 
 .tabBody {
-  height: 100%;
-  min-height: 30rem;
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 40rem;
   background-color: $background-color;
 }
 
@@ -34,7 +43,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
 
   @include for-tablet-portrait-up {
     flex-direction: row;
@@ -44,17 +52,17 @@
 
 .card {
   min-height: 36rem;
-  width: 100%;
   margin: 1rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: $primary-color;
   border-radius: 2rem;
 
   @include for-tablet-portrait-up {
     margin: 0 1rem;
-    width: 60%;
+    min-width: 30rem;
   }
 }
 
@@ -63,9 +71,75 @@
   background-color: $dark-blue-color;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  min-height: 10rem;
+  min-height: 15rem;
+  width: 100%;
+  align-items: center;
+  color: white;
+  text-align: center;
 
   & > div:nth-child(odd) {
     background-color: $blue-color;
+  }
+  & > h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  & > span {
+    font-size: 1.8rem;
+    color: $primary-color;
+  }
+}
+
+.cardBody {
+  color: white;
+
+  & > label {
+    font-size: 2rem;
+  }
+
+  & > .price {
+    font-size: 4rem;
+    font-style: italic;
+  }
+}
+
+.cardAction {
+  & > button {
+    min-width: 30rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    min-height: 8rem;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: $dark-matter-color;
+    color: $primary-color;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: lighten($dark-matter-color, 5);
+    }
+  }
+}
+
+.tabTwo,
+.tabThree {
+  position: absolute;
+  left: -8rem;
+}
+.tabTwoDesc,
+.tabThreeDesc {
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.tabTwoHints,
+.tabThreeHints {
+  font-size: 2rem;
+
+  & > span {
+    font-style: italic;
+    color: $dark-matter-color;
   }
 }

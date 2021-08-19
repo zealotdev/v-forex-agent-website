@@ -61,7 +61,7 @@ const Tabs = ({ router }) => {
                       <span>{packageItem.desc}</span>
                     </div>
                     <div className={styles.cardBody}>
-                      <span className={styles.for}>for</span>
+                      <label className={styles.for}>for only </label>
                       <span className={styles.price}>{packageItem.price}</span>
                     </div>
                     <div className={styles.cardAction}>
@@ -73,9 +73,48 @@ const Tabs = ({ router }) => {
             </div>
           </React.Fragment>
         )}
-        {isTabTwo && <React.Fragment>This is tab two component</React.Fragment>}
+        {isTabTwo && (
+          <React.Fragment>
+            <div className={styles.tabTwo}>
+              <p className={styles.tabTwoDesc}>
+                If trading can not fit in your daily schedule but you would like
+                to increase your substantial earning, we got you covered. Our
+                trained team is ready to manage your account and split 50/50
+                profits on a pre-planned basis.
+              </p>
+              <span className={styles.tabTwoHints}>
+                Requirements:{' '}
+                <span>
+                  <b>$500</b> on your trading account.
+                </span>
+              </span>
+            </div>
+          </React.Fragment>
+        )}
         {isTabThree && (
-          <React.Fragment>This is tab three component</React.Fragment>
+          <React.Fragment>
+            <div className={styles.tabThree}>
+              <p className={styles.tabThreeDesc}>
+                We provide payment services on the following
+              </p>
+              <span className={styles.tabThreeHints}>
+                <ul>
+                  <li>
+                    <b>Super Forex </b> Deposit/Withdraw Service
+                  </li>
+                  <li>
+                    <b>Deriv/Binary </b> Deposit/Withdraw Service
+                  </li>
+                  <li>
+                    <b>LocalBitcoin </b> Buy/Sell BTC
+                  </li>
+                  <li>
+                    <b>Skrill </b> Buy/Sell USD
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </React.Fragment>
         )}
       </div>
     </div>

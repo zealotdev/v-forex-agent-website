@@ -32,13 +32,13 @@
   font-weight: 300;
   text-align: center;
 
-  @include for-tablet-portrait-up {
-    font-size: 1.8rem;
-    width: 70%;
-  }
-  @include for-tablet-landscape-up {
-    width: 60%;
-  }
+  // @include for-tablet-portrait-up {
+  //   font-size: 1.8rem;
+  //   width: 70%;
+  // }
+  // @include for-tablet-landscape-up {
+  //   width: 60%;
+  // }
 }
 
 .accordionComponent {
